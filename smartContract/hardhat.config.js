@@ -9,12 +9,12 @@ const { API_URL, PRIVATE_KEY } = process.env;
 
 module.exports = {
 	solidity: '0.8.19',
-	defaultNetwork: 'goerli',
+	defaultNetwork: 'sepolia',
 	networks: {
 		hardhat: {},
-		goerli: {
-			url: API_URL,
-			accounts: [`0x${PRIVATE_KEY}`],
+		sepolia: {
+			url: process.env.API_URL,
+			accounts: [`0x${process.env.PRIVATE_KEY}`],
 		},
 	},
 };

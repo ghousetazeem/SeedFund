@@ -64,18 +64,18 @@ const Card = ({ campaign, user }) => {
 				</div>
 				{user === campaign.owner && getDaysLeft(campaign.deadline) > 0 ? (
 					<div className="sm:mt-4 mt-2 flex gap-3 font-semibold">
-						{/* <ClientButton
-              onClick={(e) => handleClickButton(e, "withdraw")}
-              className="bg-emerald-500 rounded-lg border-2 border-emerald-500 hover:bg-emerald-600 hover:border-emerald-600 transition-all duration-200 w-full p-2"
-            >
-              Withdraw
-            </ClientButton>
-            <ClientButton
-              onClick={(e) => handleClickButton(e, "end")}
-              className="bg-transparent text-emerald-500 rounded-lg border-2 border-emerald-500 hover:bg-emerald-600 hover:border-emerald-600 hover:text-neutral-200 transition-all duration-200 w-full p-2"
-            >
-              End
-            </ClientButton> */}
+						<ClientButton
+							onClick={(e) => handleClickButton(e, "withdraw")}
+							className="bg-emerald-500 rounded-lg border-2 border-emerald-500 hover:bg-emerald-600 hover:border-emerald-600 transition-all duration-200 w-full p-2"
+						>
+							Withdraw
+						</ClientButton>
+						<ClientButton
+							onClick={(e) => handleClickButton(e, "end")}
+							className="bg-transparent text-emerald-500 rounded-lg border-2 border-emerald-500 hover:bg-emerald-600 hover:border-emerald-600 hover:text-neutral-200 transition-all duration-200 w-full p-2"
+						>
+							End
+						</ClientButton>
 					</div>
 				) : (
 					<div className="flex items-center">

@@ -5,7 +5,7 @@ import { ethers } from "ethers";
 import { toast } from "react-toastify";
 import { createContext, useContext, useEffect, useState } from "react";
 
-import SmartContract from "../../../smart-contract/artifacts/contracts/CrowdFunding.sol/CrowdFunding.json";
+import SmartContract from "../../../smartContract/artifacts/contracts/CrowdFunding.sol/CrowdFunding.json";
 
 const EthersContext = createContext();
 
@@ -26,7 +26,7 @@ export const EthersProvider = ({ children }) => {
         SmartContract['abi'],
         provider
       );
-      
+
       setProvider(provider);
       setContract(contractInstance);
       Cookie.get("isAllowed") && connectWallet();
@@ -68,7 +68,7 @@ export const EthersProvider = ({ children }) => {
     loading,
     contract,
     provider,
-    selectedCampaign, 
+    selectedCampaign,
     connectWallet,
     disconnectWallet,
     setSelectedCampaign,
