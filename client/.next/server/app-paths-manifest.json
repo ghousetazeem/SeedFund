@@ -1,13 +1,6 @@
 {
-  "/_not-found": "app/_not-found.js",
-  "/favicon.ico/route": "app/favicon.ico/route.js",
   "/page": "app/page.js",
-  "/account/page": "app/account/page.js",
-  "/create/page": "app/create/page.js",
-  "/campaigns/page": "app/campaigns/page.js",
-  "/search/page": "app/search/page.js",
-  "/api/campaigns/route": "app/api/campaigns/route.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
   "/api/total/route": "app/api/total/route.js",
-  "/campaigns/[title]/page": "app/campaigns/[title]/page.js",
-  "/api/campaigns/[id]/route": "app/api/campaigns/[id]/route.js"
+  "/api/campaigns/route": "app/api/campaigns/route.js"
 }

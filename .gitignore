@@ -8,13 +8,9 @@ node_modules*
 /.pnp
 .pnp.js
 .env
-.next
 
 # testing
 /coverage
-
-# next.js
-/.next/
 /out/
 
 
